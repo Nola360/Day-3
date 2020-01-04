@@ -1,6 +1,6 @@
 // Template Literals
 
-const name = 'LeBron';
+const name = 'LeBron James';
 const jersey = 23;
 const job = 'Professional BasketBall';
 const city = "Los Angeles";
@@ -14,15 +14,17 @@ function hello() {
 
 html = `
 <ul>
-<li>Name: ${name}</li>
-<li>Jersey: ${jersey}</li>
-<li>Job: ${job}</li>
-<li>City: ${city}</li>
+  <li>Name: ${name}</li>
+  <li>Jersey: ${jersey}</li>
+  <li>Job: ${job}</li>
+  <li>City: ${city}</li>
 
 
-// Expressions
-<li>${hello()}</li>
-<li>${jersey > 30 ? 'Over 30' : 'Under 30'}</li>
+  // Expressions
+  <li>${hello()}</li>
+  <li>${2 + 2}</li>
+  <li>${jersey > 30 ? 'Over 30' : 'Under 30'}</li>
 </ul>;`
 
-console.log(html);
+document.body.innerHTML = html;
+// console.log(html);
